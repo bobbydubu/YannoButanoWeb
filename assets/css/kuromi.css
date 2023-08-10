@@ -1,0 +1,244 @@
+body {
+    background: url(../images/yannobg.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+}
+
+/* Add this CSS to your existing styles */
+
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    height: 10vh; /* Ensure the container takes the full viewport height */
+  }
+
+.amongus button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 0 10px;
+    color: white;
+    text-shadow: 2px 2px rgb(116, 116, 116);
+    text-transform: uppercase;
+    border: solid 2px black;
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-size: 17px;
+    background-color: hsl(49deg 98% 60%);
+    border-radius: 50px;
+    position: relative;
+    overflow: hidden;
+    transition: all .5s ease;
+  }
+
+  .amongus button:active {
+    transform: scale(.9);
+    transition: all 100ms ease;
+  }
+
+  .amongus button svg {
+    transition: all .5s ease;
+    z-index: 2;
+  }
+
+  .amongus .play {
+    transition: all .5s ease;
+    transition-delay: 300ms;
+  }
+
+  .amongus button:hover svg {
+    transform: scale(3) translate(50%);
+  }
+
+  .amongus .now {
+    position: absolute;
+    left: 0;
+    transform: translateX(-100%);
+    transition: all .5s ease;
+    z-index: 2;
+  }
+
+  .amongus button:hover .now {
+    transform: translateX(10px);
+    transition-delay: 300ms;
+  }
+
+  .amongus button:hover .play {
+    transform: translateX(200%);
+    transition-delay: 300ms;
+  }
+
+  #description-container {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  #description {
+
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 20px;
+    padding: 10px;
+  
+    color: #ffffff;
+    border-radius: 10px;
+  }
+
+  h1{
+    color: #ffffff;
+  }
+
+  .art-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .art-item {
+    width: 100%;
+    height: 0;
+    padding-bottom: 100%;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+  }
+
+  .art-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: transform 0.3s ease;
+  }
+
+  .art-item:hover img {
+    transform: scale(1.2);
+  }
+
+  /* Modal styles for the popup */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+
+  .modal img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .close-modal {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 24px;
+    color: #ffffff;
+    cursor: pointer;
+  }
+
+  .close {
+    font-size: 30px;
+    font-weight: bold;
+    color: #ffffff;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+    z-index: 3;
+  }
+
+  .close:hover {
+    color: #a3c1d8;
+  }
+
+
+  .prev-button,
+  .next-button {
+    position: absolute;
+    top: 50%;
+    font-size: 30px;
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  .prev-button {
+    left: 10px;
+  }
+  
+  .next-button {
+    right: 10px;
+  }
+
+
+/* Add this CSS to your existing styles */
+.art-gallery-small {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    justify-content: center;
+  }
+  
+ .artwork-image {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: cover;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .artwork-image:hover {
+    transform: scale(1.2);
+  }
+  
+
+
+
+  /* Footer styles */
+#footer {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Set opacity to 60% */
+    padding: 10px 0;
+    text-align: center;
+    bottom: 0;
+  }
+  
+  #footer p {
+    color: #ffffff;
+    font-size: 12px;
+    margin: 8px 1;
+  }
+  
+  #credits {
+    margin-top: 15px;
+  }
+  
+  /* Add this new style to push main-container to the top of the page */
+  #main-container {
+    padding-bottom: 50px; /* Adjust this value as needed to create space for the footer */
+  }
+  
+
+  h3 {
+    color: #ffffff;
+  }

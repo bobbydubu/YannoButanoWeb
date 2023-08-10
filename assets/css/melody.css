@@ -1,0 +1,129 @@
+.amongus button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 0 10px;
+    color: white;
+    text-shadow: 2px 2px rgb(116, 116, 116);
+    text-transform: uppercase;
+    border: solid 2px black;
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-size: 17px;
+    background-color: hsl(49deg 98% 60%);
+    border-radius: 50px;
+    position: relative;
+    overflow: hidden;
+    transition: all .5s ease;
+  }
+
+  .amongus button:active {
+    transform: scale(.9);
+    transition: all 100ms ease;
+  }
+
+  .amongus button svg {
+    transition: all .5s ease;
+    z-index: 2;
+  }
+
+  .amongus .play {
+    transition: all .5s ease;
+    transition-delay: 300ms;
+  }
+
+  .amongus button:hover svg {
+    transform: scale(3) translate(50%);
+  }
+
+  .amongus .now {
+    position: absolute;
+    left: 0;
+    transform: translateX(-100%);
+    transition: all .5s ease;
+    z-index: 2;
+  }
+
+  .amongus button:hover .now {
+    transform: translateX(10px);
+    transition-delay: 300ms;
+  }
+
+  .amongus button:hover .play {
+    transform: translateX(200%);
+    transition-delay: 300ms;
+  }
+
+  .card {
+    position: relative;
+    width: 250px; /* Increased width */
+    height: 300px; /* Increased height */
+    border-radius: 14px;
+    z-index: 1111;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 20px 20px 60px #aaad0b, -20px -20px 60px rgba(236, 215, 19, 0.856);
+    margin-left: 50px; /* Added margin to move it to the right */
+  }
+  
+  .bg {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 240px; /* Adjusted width */
+    height: 290px; /* Adjusted height */
+    z-index: 2;
+    background: url('assets/images/twitter.png'); /* Replace with your image path */
+    background-size: cover;
+    backdrop-filter:inherit;
+    border-radius: 10px;
+    overflow: hidden;
+    outline: 2px solid white;
+  }
+  
+  .blob {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #00c3ff;
+    opacity: 1;
+    filter: blur(12px);
+    animation: blob-bounce 5s infinite ease;
+  }
+
+  .right-text {
+    /* Add your styles for the right text here */
+    /* For example: */
+    padding: 20px;
+  }
+  
+  @keyframes blob-bounce {
+    0% {
+      transform: translate(-100%, -100%) translate3d(0, 0, 0);
+    }
+  
+    25% {
+      transform: translate(-100%, -100%) translate3d(100%, 0, 0);
+    }
+  
+    50% {
+      transform: translate(-100%, -100%) translate3d(100%, 100%, 0);
+    }
+  
+    75% {
+      transform: translate(-100%, -100%) translate3d(0, 100%, 0);
+    }
+  
+    100% {
+      transform: translate(-100%, -100%) translate3d(0, 0, 0);
+    }
+  }
+  
