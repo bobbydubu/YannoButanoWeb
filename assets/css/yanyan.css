@@ -466,6 +466,14 @@ button:hover {
     background-image: url(../images/yannojoint.png);
 }
 
+.service-item .fifth-service-icon {
+    background-image: url(../images/yannojoint.png);
+}
+
+.service-item:hover .fifth-service-icon {
+    background-image: url(../images/holyyanno.png);
+}
+
 
 /* My Work */
 
