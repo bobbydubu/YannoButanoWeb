@@ -92,7 +92,7 @@ https://templatemo.com/tm-531-reflux
             >
             
           </div>
-          <div class="left-image-post">
+         <div class="left-image-post">
             <div class="row">
               <div class="col-md-6">
                 <div class="left-image">
@@ -105,49 +105,83 @@ https://templatemo.com/tm-531-reflux
               </div>
               <div class="col-md-6">
                 <div class="right-text">
-                    <h4>Twitch Emote Sample</h4>
+                  <h4>Twitch Emote Sample</h4>
                   <p>
-                   Some examples of my Twitch Emotes:
-                   3 emote pack: 50$ USD / ₱2700 PHP
-                   12 emote pack: 100$ USD / ₱5000 PHP
-                   additional emote: 20$ / ₱1000 PHP
-                   [ commercial fee included ]
+                    Some examples of my Twitch Emotes:
+                    3 emote pack: 50$ USD / ₱2700 PHP
+                    12 emote pack: 100$ USD / ₱5000 PHP
+                    additional emote: 20$ / ₱1000 PHP
+                    [ commercial fee included ]
                   </p>
-                  <p>I also have Carrd, click the button below to visit my Carrd page ⣠⡄⡀⠀⠀⠀⣯⣜⡐⢢⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-                    ⠀⢘⣷⣼⢶⡀⠀⠀⠀⠀⠀⠀⠀⣽⣿⣾⣐⣇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-                    ⠀⠼⠛⡛⣾⣤⣀⠀⠀⠀⠀⠀⢀⣿⣿⢿⠿⠗⠤⠤⢄⡀⠀⠀⠀⠀⠀⠀
-                    ⣮⣦⣯⣽⣿⣷⣿⣵⢢⢤⣤⡖⠉⢈⡤⠆⠀⢀⡀⠈⠁⠒⠚⡴⡀⡀⠀⠀
-                    ⠙⠿⠿⠛⠈⠹⣿⢯⡟⡳⣨⠞⠀⠀⣄⣤⣶⢖⠒⠲⣤⣢⣾⣿⡿⢨⠄⠀
-                    ⠀⠀⠀⠀⠀⠀⠘⣏⣿⡇⢘⡢⢰⣿⣿⣿⣿⣧⣶⣶⣿⣿⣿⣿⣿⣄⢧⣂
-                    ⠀⠀⠀⠀⠀⠀⠀⠈⢺⠿⡴⢧⠿⣿⣿⣿⣿⠿⢿⣿⣿⣿⣿⣿⣿⣿⡮⣷
-                    ⠀⠀⠀⠀⠀⠀⡰⣱⣴⣯⣴⣎⣾⢷⣿⣿⣿⣆⠣⢞⠛⡯⣙⠳⢻⡝⠷⢿
-                    ⠀⠀⠀⠀⠀⠀⠱⢿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠯⢷⣎⣵⣒⡬⠌⠥⠒⠈⠀
-                    ⠀⠀⠀⠀⠀⠀⠀⠀⠉⠉⠉⠋⠉⠉⠉⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</p>
-                  <div class="white-button">
-                    <a href="https://yannobutano.carrd.co/#" target="_blank">Visit my Carrd</a>
-                  </div>
+                </div>
               </div>
             </div>
           </div>
+          
+          <div class="left-image-post">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="left-image">
+                  <div class="slideshow-container">
+                    <img class="slideshow-image" src="assets/images/a1.jpg" alt="" />
+                    <img class="slideshow-image" src="assets/images/a2.jpg" alt="" />
+                    <img class="slideshow-image" src="assets/images/a3.jpg" alt="" />
+                    <!-- Add more image elements here as needed -->
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="right-text">
+                  <h4>[BRAND NEW!] Adopatbles</h4>
+                  <p>
+                    Some examples of my Mini Adoptables:
+                    30$ USD / ₱1500 PHP
+                    [ commercial fee: 20$+ ]
+                    file consists of png of the character and one character color palette sheet
+                  </p>
+                  <p>! Please read the 'Adopatble Rule' on the 'Terms and Conditions' section before proceeding
+                    with your request !</p>
+                  <p>I also have Carrd, click the button below to visit my Carrd page :3</p>
+                  <div class="white-button">
+                    <a href="https://yannobutano.carrd.co/#" target="_blank">Visit my Carrd</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
           <script>
             // JavaScript code
-var slideIndex = 0;
-showSlides();
-
-function showSlides() {
-  var i;
-  var slides = document.getElementsByClassName("slideshow-image");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {
-    slideIndex = 1;
-  }
-  slides[slideIndex - 1].style.display = "block";
-  setTimeout(showSlides, 3000); // Change image every 3 seconds
-}
-
+            var slideIndex1 = 0;
+            var slideIndex2 = 0;
+            showSlides();
+          
+            function showSlides() {
+              var i;
+              var slides1 = document.querySelectorAll(".left-image-post:nth-child(odd) .slideshow-image");
+              var slides2 = document.querySelectorAll(".left-image-post:nth-child(even) .slideshow-image");
+          
+              for (i = 0; i < slides1.length; i++) {
+                slides1[i].style.display = "none";
+              }
+              for (i = 0; i < slides2.length; i++) {
+                slides2[i].style.display = "none";
+              }
+          
+              slideIndex1++;
+              if (slideIndex1 > slides1.length) {
+                slideIndex1 = 1;
+              }
+              slideIndex2++;
+              if (slideIndex2 > slides2.length) {
+                slideIndex2 = 1;
+              }
+          
+              slides1[slideIndex1 - 1].style.display = "block";
+              slides2[slideIndex2 - 1].style.display = "block";
+          
+              setTimeout(showSlides, 3000); // Change image every 3 seconds
+            }
           </script>
           
           
